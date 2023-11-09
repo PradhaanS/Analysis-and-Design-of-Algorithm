@@ -58,31 +58,33 @@ class QuickSort
 	}
 	public static void main(String args[])
 	{
-        Random rand = new Random();
-        int arr[]=new int[100];
-        int n =100;
-        for(int i=0;i<n;i++){
-            arr[i]=rand.nextInt(100);
-        }
-        System.out.println("UNSORTED ARRAY:");
-        for(int i=0;i<n;i++){
-            System.out.print(arr[i]+" ");
-        }
-        System.out.println("");
-
-        QuickSort ob = new QuickSort();
-        long start1 = System.nanoTime();
-	ob.sort(arr, 0, n-1);
-        System.out.println("SORTED ARRAY");
-	printArray(arr);
-        long end1 = System.nanoTime();
-        System.out.println("Elapsed Time in nano seconds: "+ (end1-start1));
-        long start2 = System.currentTimeMillis();
-        ob.sort(arr, 0, n-1);
-        System.out.println("SORTED ARRAY");
-	printArray(arr);
-        long end2 = System.currentTimeMillis();
-        System.out.println("Elapsed Time in milli seconds: "+ (end2-start2));
+	        Random rand = new Random();
+	        int arr[]=new int[100];
+	        int n =100;
+	        for(int i=0;i<n;i++)
+		{
+	            arr[i]=rand.nextInt(100);
+	        }
+	        System.out.println("UNSORTED ARRAY:");
+	        for(int i=0;i<n;i++)
+		{
+	            System.out.print(arr[i]+" ");
+	        }
+	        System.out.println("");
+	
+	        QuickSort ob = new QuickSort();
+	        long start1 = System.nanoTime();
+		ob.sort(arr, 0, n-1);
+	        System.out.println("SORTED ARRAY");
+		printArray(arr);
+	        long end1 = System.nanoTime();
+	        System.out.println("Elapsed Time in nano seconds: "+ (end1-start1));
+	        long start2 = System.currentTimeMillis();
+	        ob.sort(arr, 0, n-1);
+	        System.out.println("SORTED ARRAY");
+		printArray(arr);
+	        long end2 = System.currentTimeMillis();
+	        System.out.println("Elapsed Time in milli seconds: "+ (end2-start2));
 	}
 }
 
