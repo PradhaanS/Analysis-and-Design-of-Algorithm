@@ -70,19 +70,17 @@ class QuickSort
         }
         System.out.println("");
 
-		QuickSort ob = new QuickSort();
-		ob.sort(arr, 0, n-1);
-
-		System.out.println("SORTED ARRAY");
-		printArray(arr);
-
-        QuickSort obj = new QuickSort();
+        QuickSort ob = new QuickSort();
         long start1 = System.nanoTime();
-		ob.sort(arr, 0, n-1);
+	ob.sort(arr, 0, n-1);
+        System.out.println("SORTED ARRAY");
+	printArray(arr);
         long end1 = System.nanoTime();
         System.out.println("Elapsed Time in nano seconds: "+ (end1-start1));
         long start2 = System.currentTimeMillis();
         ob.sort(arr, 0, n-1);
+        System.out.println("SORTED ARRAY");
+	printArray(arr);
         long end2 = System.currentTimeMillis();
         System.out.println("Elapsed Time in milli seconds: "+ (end2-start2));
 	}
