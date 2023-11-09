@@ -4,7 +4,7 @@ class QuickSort
 {
     Random rand = new Random();
     int arr[]=new int[100];
-    int min,n =100;
+    int n =100;
 
 	int partition(int arr[], int low, int high)
 	{
@@ -60,7 +60,7 @@ class QuickSort
 	{
         Random rand = new Random();
         int arr[]=new int[100];
-        int min,n =100;
+        int n =100;
         for(int i=0;i<n;i++){
             arr[i]=rand.nextInt(100);
         }
